@@ -56,10 +56,6 @@ public class Main extends Application {
                             Image img = new Image(file.toURI().toString());
                             String[] folder
                                     = file.getAbsolutePath().split("\\\\");
-                            System.out.println(folder[folder.length - 2]
-                                    + "/" + folder[folder.length - 1]
-                                    + " 1 0 0 " + img.getWidth()
-                                    + " " + img.getHeight());
                             if (text.getText().isEmpty()) {
                                 text.setText(folder[folder.length - 2]
                                         + "/" + folder[folder.length - 1]
